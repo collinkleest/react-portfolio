@@ -21,10 +21,20 @@ nav {
     list-style-type: none;
 }
 
+.activeNavItem {
+    font-weight: bold;
+}
+
 .navItem {
     text-decoration: none;
     display: block;
     padding: 5px 5px;
+    color: black;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.navItem:hover {
+    font-weight: bold;
 }
 
 .logo {

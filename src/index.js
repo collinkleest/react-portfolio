@@ -38,13 +38,27 @@ const App = () => {
           </Nav>
           
           <Switch>
-            {navLinks.map((item) => {
-              return (
-                <Route exact path={item.path}>
-                  {item.component}
-                </Route>
-              )
-            })}
+
+            <Route exact path="/">
+              <Home navLinks={navLinks} />
+            </Route>
+
+            <Route path="/about">
+              <About />
+            </Route>
+
+            <Route path="/projects">
+              <Projects />
+            </Route>
+
+            <Route path="/resume">
+              <Resume  />
+            </Route>
+
+            <Route path="/contact">
+              <Contact  />
+            </Route>
+
           </Switch>
         </Router>
     </div>
