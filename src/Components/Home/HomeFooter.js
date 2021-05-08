@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons/faLinkedin";
 import { faGithub } from "@fortawesome/free-brands-svg-icons/faGithub";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
+import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons/faEnvelopeOpen";
 
 const HomeFooter = (props) => {
     
@@ -24,6 +25,7 @@ const HomeFooter = (props) => {
             <FontAwesomeIcon style={iconStyle} icon={faLinkedin} size="2x" />
             <FontAwesomeIcon style={iconStyle} icon={faGithub} size="2x" />
             <FontAwesomeIcon style={iconStyle} icon={faYoutube} size="2x" />
+			<FontAwesomeIcon style={iconStyle} icon={faEnvelopeOpen} size="2x" />
         </ContainerStyled>
     );
 
