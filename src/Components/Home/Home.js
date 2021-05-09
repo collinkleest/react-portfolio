@@ -19,6 +19,10 @@ const Home = (props) => {
         margin-left: auto;
         justify-content: center;
         align-items: center;
+        top: 100px;
+        @media (min-height: 400px) {
+            top: 50px;
+        }
     `;
 
     const HomeContentContainer = styled.div`
@@ -34,7 +38,7 @@ const Home = (props) => {
         -webkit-box-direction: normal;
         -webkit-box-align: start;
         -webkit-align-items: flex-start;
-        -ms-flex-align: start; 
+        -ms-flex-align: start;
     `;
 
     const StyledImage = styled.img`
