@@ -5,12 +5,16 @@ const HomeListItem = (props) => {
     const HomeListItemStyle = styled.li`
             display: block;
             overflow: visible;
-            transition: transform 400ms ease, -webkit-transform 400ms ease;
+            transition: margin-left 400ms ease;
             text-align: -webkit-match-parent;
             color: #dbd9e8;
             padding: 5px 0px 5px 0px;
             margin: 5px 0px 5px 0px; 
             font-size: 22px; 
+            &:hover {
+                margin-left: 22px;
+                color: rgb(211, 237, 75);
+            }
     `;
 
     return (
