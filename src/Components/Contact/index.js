@@ -1,3 +1,4 @@
 import { Contact } from "./Contact.js";
+import { ContactInput, ContactInputArea } from "./ContactInput.js"; 
 
-export { Contact };
+export { Contact, ContactInput, ContactInputArea };
