@@ -5,7 +5,6 @@ import { HomeList } from "./HomeList.js";
 import { HomeFooter } from "./HomeFooter.js";
 
 const Home = (props) => {
-
     const Container = styled.div`
         position: relative;
         left: 0px;

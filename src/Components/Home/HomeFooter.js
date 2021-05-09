@@ -7,7 +7,6 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons/faYoutube";
 import { faEnvelopeOpen } from "@fortawesome/free-regular-svg-icons/faEnvelopeOpen";
 
 const HomeFooter = (props) => {
-    
     const ContainerStyled = styled.div`
         display: flex;
         margin-top: 20px;
@@ -58,4 +57,4 @@ const HomeFooter = (props) => {
 
 }
 
-export { HomeFooter }
+export { HomeFooter };
