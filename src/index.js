@@ -18,6 +18,7 @@ import { Projects } from './Components/Projects/index.js';
 import { Resume } from "./Components/Resume/index.js";
 import { About } from "./Components/About/index.js";
 import { Home } from './Components/Home/index.js';
+import { WorkExperience } from "./Components/WorkExperience/index.js";
 
 // styling
 import './index.css';
@@ -25,6 +26,7 @@ import './index.css';
 const navLinks = [
   {title: 'Home', path: '/', component: Home },
   {title: 'About', path: '/about', component: About},
+  {title: 'Work Experience', path: '/workexperience', component: WorkExperience},
   {title: 'Projects', path: '/projects', component: Projects},
   {title: 'Resume', path: '/resume', component: Resume},
   {title: 'Contact', path: '/contact', component: Contact}  
@@ -45,6 +47,10 @@ const App = () => {
 
             <Route path="/about">
               <About />
+            </Route>
+
+            <Route path="/workexperience">
+              <WorkExperience />
             </Route>
 
             <Route path="/projects">

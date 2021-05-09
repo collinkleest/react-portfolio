@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from "react-router-dom";
 
 const HomeListItem = (props) => {
     const HomeListItemStyle = styled.li`
@@ -31,23 +32,45 @@ const HomeList = (props) => {
             margin-top: 0px;
             margin-bottom: 10px;
     `;
+
+    const LinkStyle = {
+        textDecoration: 'none',
+    }
     
     return (
         <HomeListStyle>
+                <Link style={LinkStyle} to="/about">
+                    <HomeListItem>
+                        About
+                    </HomeListItem>
+                </Link>
             <HomeListItem>
-                About
+                <Link style={LinkStyle} to="/workexperience">
+                    <HomeListItem>
+                        Work Experience
+                    </HomeListItem>
+                </Link>
             </HomeListItem>
             <HomeListItem>
-                Work Experience
+                <Link style={LinkStyle} to="/projects">
+                    <HomeListItem>
+                        Projects
+                    </HomeListItem>
+                </Link>
             </HomeListItem>
             <HomeListItem>
-                Projects
+                <Link style={LinkStyle} to="/resume">
+                    <HomeListItem>
+                        Resume
+                    </HomeListItem>
+                </Link>
             </HomeListItem>
             <HomeListItem>
-                Resume
-            </HomeListItem>
-            <HomeListItem>
-                Contact
+                <Link style={LinkStyle} to="/contact">
+                    <HomeListItem>
+                        Contact
+                    </HomeListItem>
+                </Link>
             </HomeListItem>
         </HomeListStyle>
     );
