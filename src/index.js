@@ -33,11 +33,12 @@ const navLinks = [
 ];
 
 const App = () => {
+  
   return (
     <div>
         <Router>
-          <Nav navLinks={navLinks}>
-          </Nav>
+          
+          
           
           <Switch>
 
@@ -46,22 +47,32 @@ const App = () => {
             </Route>
 
             <Route path="/about">
+              <Nav navLinks={navLinks}>
+              </Nav>
               <About />
             </Route>
 
             <Route path="/workexperience">
+              <Nav navLinks={navLinks}>
+              </Nav>
               <WorkExperience />
             </Route>
 
             <Route path="/projects">
+              <Nav navLinks={navLinks}>
+              </Nav>
               <Projects />
             </Route>
 
             <Route path="/resume">
+              <Nav navLinks={navLinks}>
+              </Nav>
               <Resume  />
             </Route>
 
             <Route path="/contact">
+              <Nav navLinks={navLinks}>
+              </Nav>
               <Contact  />
             </Route>
 
