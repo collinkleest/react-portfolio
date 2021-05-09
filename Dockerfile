@@ -1,4 +1,5 @@
-FROM node:12
+# build react app
+FROM node:12 as build
 
 COPY . /app
 
@@ -6,6 +7,13 @@ WORKDIR /app/
 
 RUN yarn install
 
-EXPOSE 443
+RUN yarn build
 
-CMD ["yarn", "start"]
+# production nginx setup
+FROM nginx:stable
+
+COPY --from=build /app/dist/ /usr/share/nginx/html
+
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
