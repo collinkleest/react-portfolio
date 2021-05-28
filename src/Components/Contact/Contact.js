@@ -2,6 +2,10 @@ import React from "react";
 import styled from 'styled-components';
 import { ContactInput, ContactInputArea } from "./ContactInput.js";
 
+const SendMessage = (fName, lName, email, subject, message) => {
+    
+}
+
 
 const Contact = (props) => {
     

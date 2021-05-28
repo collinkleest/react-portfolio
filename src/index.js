@@ -38,8 +38,6 @@ const App = () => {
     <div>
         <Router>
           
-          
-          
           <Switch>
 
             <Route exact path="/">
