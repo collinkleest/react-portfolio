@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const LinksContainer = styled.div`
-    margin-left: 20px;
+    margin-left: 30px;
 `;
 
 const StyledLink = styled.a`

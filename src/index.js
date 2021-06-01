@@ -74,10 +74,9 @@ const App = () => {
               </Nav>
               <Contact  />
             </Route>
-
           </Switch>
+          <Footer />
         </Router>
-        <Footer />
     </div>
   );
 };

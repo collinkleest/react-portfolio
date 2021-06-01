@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import CKKLogo from "../../assets/img/ck-logo1.png";
 import { Links } from './Links.js';
+import { Contact } from './Contact.js';
 
 const Container = styled.div`
     background-color: #eaf2fa;
@@ -10,7 +11,6 @@ const Container = styled.div`
     bottom: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
 `;
 
 const LeftContainer = styled.div`
@@ -34,6 +34,7 @@ const Footer = (props) => {
                 </p>
             </LeftContainer>
             <Links />
+            <Contact />
         </Container>
     );
 }
