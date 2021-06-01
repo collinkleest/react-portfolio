@@ -1,8 +1,10 @@
 import React from "react";
+import { AboutHeader } from "./AboutHeader.js";
+import UpCloseImg from "../../assets/img/upclose.jpg";
 
 const About = (props) => {
     return (
-        <h1> About </h1>
+        <AboutHeader img={UpCloseImg} />
     );
 };
 
