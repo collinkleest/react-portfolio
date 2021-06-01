@@ -19,6 +19,7 @@ import { Resume } from "./Components/Resume/index.js";
 import { About } from "./Components/About/index.js";
 import { Home } from './Components/Home/index.js';
 import { WorkExperience } from "./Components/WorkExperience/index.js";
+import { Footer } from "./Components/Footer/Footer.js";
 
 // styling
 import './index.css';
@@ -76,6 +77,7 @@ const App = () => {
 
           </Switch>
         </Router>
+        <Footer />
     </div>
   );
 };
